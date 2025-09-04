@@ -1,0 +1,117 @@
+body {
+
+    background-image: linear-gradient(45deg, #F5007A, #F50700, #F561AB);
+
+}
+
+
+h4 {
+    font-style: italic;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+
+}
+
+
+.sss {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #7387F5;
+
+}
+
+video {
+
+    border-radius: 50px;
+
+}
+
+
+.ccc {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+
+}
+
+.slider {
+    width: 400px;
+    /* largura fixa */
+    height: 600px;
+    /* altura fixa */
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    /* 4 imagens → 400% */
+    animation: deslizar 13s infinite;
+    /* tempo total do ciclo */
+}
+
+.slides img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+@keyframes deslizar {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    /* Foto 1 */
+    25%,
+    45% {
+        transform: translateX(-400px);
+    }
+
+    /* Foto 2 */
+    50%,
+    70% {
+        transform: translateX(-800px);
+    }
+
+    /* Foto 3 */
+    75%,
+    95% {
+        transform: translateX(-1200px);
+    }
+
+    /* Foto 4 */
+    100% {
+        transform: translateX(0);
+    }
+
+    /* Volta p/ Foto 1 */
+}
+
+
+.sla{
+
+text-align: center;
+animation: digitar 4s steps(20) 1s forwards, cursor 0.8s infinite;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100hv;
+animation: piscar 1s infinite;
+color: darkred;
+font-family: sans-serif;
+
+}
+
+@keyframes piscar {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+  }
